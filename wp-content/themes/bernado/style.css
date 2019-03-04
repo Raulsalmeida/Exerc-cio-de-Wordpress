@@ -1,0 +1,141 @@
+/*
+Author: Raul Silva
+*/
+@media only screen and (min-width: 1200px) {
+	.MenuCima{
+		width:100%;
+		border-bottom-style: outset;
+  	border-width: 2px;
+		height:90px;
+		padding-left:200px;
+	}
+	
+	.Logomarca{
+		margin-left:200px;
+		position:absolute; 
+		top:0; 
+		z-index:2;
+	}
+	
+	.Logomarca img{
+		max-height: 108px; 
+		width: auto;
+	}
+
+	.grid-container {
+		margin-left:750px;
+		display: grid;
+	  grid-template-columns: 150px 150px 150px;
+	}
+
+	.grid-container > div {
+	 	font-size: 30px;
+	}
+
+	.menu {
+  	padding: 25px;
+		padding-top:20px;
+	}
+	
+	#banner-div{
+		width:100%;
+	}
+	
+	img#banner{
+		position:relative;
+		width:1000px;
+		height:auto;
+	}
+	
+	#banner-titulo{
+		position:absolute;
+		font-family:impact;
+		font-size:48px;
+		color:rgb(57, 197, 168);
+		padding-left:240px;
+		padding-top:140px;
+	}
+	
+	#banner-texto{
+		position:absolute;
+		font-size:36px;
+		padding-left:240px;
+		padding-top:200px;
+	}
+	
+	img#empresa{
+		margin-bottom:30px;
+	}
+	
+	#titulo{
+		font-size:32px;
+		font-family:times;
+		padding-left:420px;
+		margin-bottom:20px;
+	}
+	
+	#texto{
+		padding-right:120px;
+		padding-top:10px;
+		font-size:16px;
+		font-family:times;
+		text-align:justify;
+	}
+	
+	#topico{
+		font-size:32px;
+		color:rgb(57, 197, 168);
+		font-family:times;
+		padding-left:450px;
+		margin-bottom:20px;
+	}
+	
+	#topico-texto{
+		padding-right:120px;
+		font-size:16px;
+		font-family:times;
+		text-align:justify;
+	}
+
+	.MenuBaixo{
+		position: relative; 
+		bottom: 0; 
+		width: 100%; 
+		height: 400px;
+		margin-top:-50;
+		background: rgb(45, 62, 80);
+	}
+	
+	#form{
+		color: white;
+		padding-top:20px;
+	}
+	
+	#logo-footer{
+		padding-top:20px;
+		padding-left:40px;
+	}
+	
+	#contatos{
+		color:white;
+		font-family:times;
+		font-size:15px;
+		text-align:justify;
+		margin-bottom:120px;
+	}
+	
+	#direitos{
+		border-top-style: solid;
+		border-width:1px;
+		font-family:times;
+		color:white;
+		padding-left:100px;
+		text-align:justify;
+	}
+	
+	#iframe{
+		padding-top:20px;
+		padding-left:20px;
+	}
+	
+}
