@@ -15,30 +15,32 @@
 
 </head>
 <body <?php body_class(); ?>>
-	<div class="MenuCima">
-		<div class="Logomarca"><?php the_custom_logo() ?></div>
-			<div class="grid-container">
-				<div>
-					<table>
-						<?php
-							// The Query
-							$bernado_post = new WP_Query( array( 'category_name' => 'menu',) );
-							// The Loop
-							if ( $bernado_post->have_posts() ) {
-								echo '<tr>';
-								while ( $bernado_post->have_posts() ) {
-									$bernado_post->the_post();
-									echo '<td class="menu">' . get_the_title() . '</td>';
-								}
-								echo '</tr>';
-							} else {
-								// no posts found
-							}
 
-						?>
-					</table>
-				</div>
-			</div>
+	<div class="container" id="MenuCima">
+	  <div class="row">
+	    <div class="col-sm" id="logo">
+	      <?php the_custom_logo() ?>
+	    </div>
+	    <div class="col-sm">
+	      <table>
+			<?php
+				// The Query
+				$bernado_post = new WP_Query( array( 'category_name' => 'menu',) );
+					// The Loop
+					if ( $bernado_post->have_posts() ) {
+						echo '<tr>';
+						while ( $bernado_post->have_posts() ) {
+						$bernado_post->the_post();
+						echo '<td class="menu">' . get_the_title() . '</td>';
+						}
+						echo '</tr>';
+					} else {
+						// no posts found
+					}
+			?>
+			</table>
+	    </div>
+	  </div>
 	</div>
 
 	
